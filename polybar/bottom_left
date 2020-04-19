@@ -1,0 +1,75 @@
+[colors]
+background     = #a2d2d30
+;#151515
+;foreground     = #afafd7
+foreground     = #9a9390
+;#dc143c
+foreground-alt = #5f5f87
+alert          = #9a9390
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[bar/bottom_left]
+monitor             = eDP1
+width               = 20%
+height              = 32
+fixed-center        = true
+
+background          = ${colors.background}
+foreground          = ${colors.foreground}
+
+padding-left        = 2
+padding-right       = 2
+module-margin-left  = 4
+module-margin-right = 4
+
+bottom              = true
+
+font-0	            = "Ubuntu Mono:size:8;3"
+font-1	            = "FontAwesome:size=8;2"
+font-2              = "Material Icons:size-21;4"
+
+cursor-click        = pointer
+
+modules-left        = menu term
+;term files browser settings title
+;modules-center      = mpd
+;modules-right       = pulseaudio
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/menu]
+type                    = custom/text
+content                 = 
+content-padding         = 2
+content-background      = ${colors.background}
+content-foreground      = ${colors.foreground-alt}
+click-left              = xfce4-popup-whiskermenu -p
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/title]
+type                    = internal/xwindow
+format                  = <label>
+format-background       = ${colors.background}
+format-foreground       = ${colors.foreground}
+format-padding          = 4
+
+label                   = %title%
+label-maxlen            = 20
+label-empty             = Empty
+label-empty-foreground  = ${colors.foreground-alt}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/term]
+type                    = custom/text
+;content                 = 
+content                 ="$_"
+content-foreground      = ${colors.foreground-alt}
+click-left              = xfce4-terminal &
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/powermenu]
+type                    = custom/text
+content                 = 
+content-padding         = 2
+content-background      = ${colors.background}
+content-foreground      = ${colors.foreground}
+click-left              = xfce4-session-logout
