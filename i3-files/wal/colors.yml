@@ -1,0 +1,24 @@
+wallpaper: "/home/voekreb/Documents/Wallpapers/daniel-frank-UoUqvOOwDh8-unsplash.jpg"
+
+special:
+    background: "#141312"
+    foreground: "#decabe"
+    cursor: "#decabe"
+
+colors:
+    color0: "#141312"
+    color1: "#8D402A"
+    color2: "#935236"
+    color3: "#9F6D53"
+    color4: "#B8845A"
+    color5: "#B5896F"
+    color6: "#C69676"
+    color7: "#decabe"
+    color8: "#9b8d85"
+    color9: "#8D402A"
+    color10: "#935236"
+    color11: "#9F6D53"
+    color12: "#B8845A"
+    color13: "#B5896F"
+    color14: "#C69676"
+    color15: "#decabe"

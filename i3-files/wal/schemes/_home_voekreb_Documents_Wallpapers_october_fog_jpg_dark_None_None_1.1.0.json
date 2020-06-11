@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/voekreb/Documents/Wallpapers/october_fog.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0b09",
+        "foreground": "#d9d8d5",
+        "cursor": "#d9d8d5"
+    },
+    "colors": {
+        "color0": "#0a0b09",
+        "color1": "#7F807A",
+        "color2": "#86837C",
+        "color3": "#92908B",
+        "color4": "#A3A19C",
+        "color5": "#B3B1AB",
+        "color6": "#C1BEB8",
+        "color7": "#d9d8d5",
+        "color8": "#979795",
+        "color9": "#7F807A",
+        "color10": "#86837C",
+        "color11": "#92908B",
+        "color12": "#A3A19C",
+        "color13": "#B3B1AB",
+        "color14": "#C1BEB8",
+        "color15": "#d9d8d5"
+    }
+}

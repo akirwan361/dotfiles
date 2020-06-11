@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/voekreb/Documents/Wallpapers/ws_Four_Elements_Glasses_2560x1600.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#000000",
+        "foreground": "#ddd3cf",
+        "cursor": "#ddd3cf"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#635657",
+        "color2": "#9C330D",
+        "color3": "#B76137",
+        "color4": "#897D76",
+        "color5": "#D0A136",
+        "color6": "#A8999C",
+        "color7": "#ddd3cf",
+        "color8": "#9a9390",
+        "color9": "#635657",
+        "color10": "#9C330D",
+        "color11": "#B76137",
+        "color12": "#897D76",
+        "color13": "#D0A136",
+        "color14": "#A8999C",
+        "color15": "#ddd3cf"
+    }
+}

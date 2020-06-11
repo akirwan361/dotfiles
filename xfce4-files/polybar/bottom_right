@@ -1,0 +1,68 @@
+[colors]
+background     = #a2d2d30
+;#ff2d2d30
+;#151515
+;foreground     = #afafd7
+foreground     = #9a9390
+;#dc143c
+foreground-alt = #5f5f87
+alert          = #9a9390
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[bar/bottom_right]
+monitor             = eDP1
+width               = 20%
+height              = 32
+offset-x            = 80%
+fixed-center        = false
+background          = ${colors.background}
+foreground          = ${colors.foreground}
+padding-left        = 2
+padding-right       = 2
+module-margin-left  = 4
+module-margin-right = 4
+bottom              = true
+font-0	            = "Ubuntu Mono:size:8;3"
+font-1	            = "FontAwesome:size=8;2"
+font-2              = "Material Icons:size-21;4"
+;modules-left        = menu title
+;term files browser settings
+;modules-center      = mpd
+modules-right       = pulseaudio powermenu
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/pulseaudio]
+type                            = internal/pulseaudio
+
+sink                            = alsa_output.pci-0000_00_1f.3.analog-stereo
+
+use-ui-max                      = true
+interval                        = 5
+
+master-soundcard                = hw:1
+format-volume                   = <bar-volume>
+bar-volume-width                = 28
+bar-volume-foreground-0         = ${colors.foreground}
+bar-volume-foreground-1         = ${colors.foreground}
+bar-volume-foreground-2         = ${colors.foreground}
+bar-volume-foreground-3         = ${colors.foreground}
+bar-volume-foreground-4         = ${colors.foreground}
+bar-volume-foreground-5         = ${colors.alert}
+bar-volume-foreground-6         = #ff5555
+bar-volume-gradient             = true
+bar-volume-indicator            = +
+bar-volume-indicator-foreground = ${colors.foreground}
+bar-volume-fill                 = -
+bar-volume-empty                = -
+bar-volume-empty-foreground     = ${colors.foreground-alt}
+label-muted                     = ------- muted --------
+label-muted-foreground          = ${colors.foreground-alt}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/powermenu]
+type                    = custom/text
+content                 = 
+content-padding         = 2
+content-background      = ${colors.background}
+content-foreground      = ${colors.foreground-alt}
+click-left              = xfce4-session-logout

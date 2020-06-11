@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/voekreb/Documents/Wallpapers/spencer-parke-metro.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0F0C18",
+        "foreground": "#e1adc4",
+        "cursor": "#e1adc4"
+    },
+    "colors": {
+        "color0": "#0F0C18",
+        "color1": "#4B3752",
+        "color2": "#5A3B62",
+        "color3": "#5D486B",
+        "color4": "#925172",
+        "color5": "#6E5187",
+        "color6": "#9D5C92",
+        "color7": "#e1adc4",
+        "color8": "#9d7989",
+        "color9": "#4B3752",
+        "color10": "#5A3B62",
+        "color11": "#5D486B",
+        "color12": "#925172",
+        "color13": "#6E5187",
+        "color14": "#9D5C92",
+        "color15": "#e1adc4"
+    }
+}

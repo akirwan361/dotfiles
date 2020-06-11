@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/voekreb/Documents/Wallpapers/nasa-E7q00J_8N7A-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#100f15",
+        "foreground": "#e2c2a1",
+        "cursor": "#e2c2a1"
+    },
+    "colors": {
+        "color0": "#100f15",
+        "color1": "#AF6D35",
+        "color2": "#C87836",
+        "color3": "#8D6B50",
+        "color4": "#A6754D",
+        "color5": "#DD8D39",
+        "color6": "#B3885B",
+        "color7": "#e2c2a1",
+        "color8": "#9e8770",
+        "color9": "#AF6D35",
+        "color10": "#C87836",
+        "color11": "#8D6B50",
+        "color12": "#A6754D",
+        "color13": "#DD8D39",
+        "color14": "#B3885B",
+        "color15": "#e2c2a1"
+    }
+}

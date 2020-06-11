@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/voekreb/Documents/Wallpapers/the-beginning-of-the-end-by-artem-chebokha-3840\u00d72160.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0f0919",
+        "foreground": "#e3cde2",
+        "cursor": "#e3cde2"
+    },
+    "colors": {
+        "color0": "#0f0919",
+        "color1": "#9068AB",
+        "color2": "#7183B4",
+        "color3": "#7686DB",
+        "color4": "#798AE1",
+        "color5": "#B68FB6",
+        "color6": "#9692DA",
+        "color7": "#e3cde2",
+        "color8": "#9e8f9e",
+        "color9": "#9068AB",
+        "color10": "#7183B4",
+        "color11": "#7686DB",
+        "color12": "#798AE1",
+        "color13": "#B68FB6",
+        "color14": "#9692DA",
+        "color15": "#e3cde2"
+    }
+}

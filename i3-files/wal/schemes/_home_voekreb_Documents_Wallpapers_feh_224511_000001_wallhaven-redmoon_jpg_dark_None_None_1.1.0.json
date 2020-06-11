@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/voekreb/Documents/Wallpapers/feh_224511_000001_wallhaven-redmoon.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0E1617",
+        "foreground": "#dd9c90",
+        "cursor": "#dd9c90"
+    },
+    "colors": {
+        "color0": "#0E1617",
+        "color1": "#6F2D34",
+        "color2": "#6D3440",
+        "color3": "#AB1E1D",
+        "color4": "#A41F20",
+        "color5": "#8C272B",
+        "color6": "#A22122",
+        "color7": "#dd9c90",
+        "color8": "#9a6d64",
+        "color9": "#6F2D34",
+        "color10": "#6D3440",
+        "color11": "#AB1E1D",
+        "color12": "#A41F20",
+        "color13": "#8C272B",
+        "color14": "#A22122",
+        "color15": "#dd9c90"
+    }
+}

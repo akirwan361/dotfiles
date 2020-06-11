@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/voekreb/Documents/Wallpapers/ruben-bagues-vPQfc4niDh0-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#3e231b",
+        "foreground": "#f6e8e1",
+        "cursor": "#f6e8e1"
+    },
+    "colors": {
+        "color0": "#3e231b",
+        "color1": "#F29F81",
+        "color2": "#FBAF90",
+        "color3": "#FABCA3",
+        "color4": "#FEC09F",
+        "color5": "#FEC8B0",
+        "color6": "#FED9C7",
+        "color7": "#f6e8e1",
+        "color8": "#aca29d",
+        "color9": "#F29F81",
+        "color10": "#FBAF90",
+        "color11": "#FABCA3",
+        "color12": "#FEC09F",
+        "color13": "#FEC8B0",
+        "color14": "#FED9C7",
+        "color15": "#f6e8e1"
+    }
+}

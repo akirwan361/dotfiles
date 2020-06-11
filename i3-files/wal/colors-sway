@@ -1,0 +1,21 @@
+set $wallpaper /home/voekreb/Documents/Wallpapers/daniel-frank-UoUqvOOwDh8-unsplash.jpg
+
+set $background #141312
+set $foreground #decabe
+
+set $color0 #141312
+set $color1 #8D402A
+set $color2 #935236
+set $color3 #9F6D53
+set $color4 #B8845A
+set $color5 #B5896F
+set $color6 #C69676
+set $color7 #decabe
+set $color8 #9b8d85
+set $color9 #8D402A
+set $color10 #935236
+set $color11 #9F6D53
+set $color12 #B8845A
+set $color13 #B5896F
+set $color14 #C69676
+set $color15 #decabe

@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/voekreb/Documents/Wallpapers/daniel-frank-UoUqvOOwDh8-unsplash.jpg"
+let background = "#141312"
+let foreground = "#decabe"
+let cursor     = "#decabe"
+
+" Colors
+let color0  = "#141312"
+let color1  = "#8D402A"
+let color2  = "#935236"
+let color3  = "#9F6D53"
+let color4  = "#B8845A"
+let color5  = "#B5896F"
+let color6  = "#C69676"
+let color7  = "#decabe"
+let color8  = "#9b8d85"
+let color9  = "#8D402A"
+let color10 = "#935236"
+let color11 = "#9F6D53"
+let color12 = "#B8845A"
+let color13 = "#B5896F"
+let color14 = "#C69676"
+let color15 = "#decabe"

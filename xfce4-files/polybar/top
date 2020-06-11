@@ -1,0 +1,118 @@
+[colors]
+background     = #ff2d2d30
+;#151515
+;foreground     = #afafd7
+foreground     = #9a9390
+;#dc143c
+foreground-alt = #5f5f87
+alert          = #9a9390
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[bar/top]
+monitor             = eDP1
+width               = 100%
+height              = 32
+fixed-center        = true
+background          = ${colors.background}
+foreground          = ${colors.foreground}
+padding-left        = 2
+padding-right       = 2
+module-margin-left  = 4
+module-margin-right = 4
+;wm-restack          = bspwm
+;font-0              = fxd:pixelsize=8;3
+;font-1              = siji:pixelsize=8;2
+
+font-0 			            = Ubuntu Mono:size:8;3
+font-1			            = FontAwesome:size=8;2
+modules-left        = network
+modules-center      = mpd
+modules-right       = battery time
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/time]
+type                     = internal/date
+interval                 = 1
+time                     = " %H:%M"
+label                    = %time%
+format-prefix            =
+format-prefix-foreground = ${colors.foreground-alt}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/network]
+type                               = internal/network
+interface                          = wlp3s0
+label-connected                    = %essid% %downspeed:9%
+interval                           = 1
+
+accumulate-stats                   = true
+unknown-as-up                      = true
+
+format-connected                   = <label-connected>
+format-disconnected                = <label-disconnected>
+format-packetloss                  = <label-packetloss> <label-connected>
+
+label-connected-foreground         = $(colors.foreground)
+label-disconnected                 = not connected
+label-disconnected-foreground      = $(colors.alert)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/battery]
+type                          = internal/battery
+full-at                       = 99
+battery                       = BAT1
+adapter                       = ACAD
+format-charging               = <bar-capacity> <label-charging>
+format-discharging            = <bar-capacity> <label-discharging>
+label-discharging             = Discharging %percentage%%
+label-discharging-foreground  = ${colors.alert}
+;format-discharging-prefix     =
+format-discharging-foreground = ${colors.foreground-alt}
+label-charging                = Charging %percentage%%
+label-charging-foreground     = ${colors.foreground}
+;format-charging-prefix        =
+format-charging-foreground    = ${colors.foreground-alt}
+format-full-foreground        = ${colors.background}
+bar-capacity-indicator        = \
+bar-capacity-width            = 10
+bar-capacity-empty            = _
+bar-capacity-fill             = |
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/mpd]
+type                              = internal/mpd
+host                              = 192.168.0.11
+port                              = 6600
+
+interval                          = 2
+
+; song formatting
+format-online                     = <label-song> <label-time>
+format-stopped                    = 0:00/0:00
+
+label-song                        = %artist% - %title%
+;𝄞 %
+label-song-maxlen                 = 70
+
+label-offline                     = mpd is offline
+;🎜 mpd is offline
+
+; Only applies if <bar-progress> is used
+bar-progress-width                = 25
+bar-progress-indicator            = |
+bar-progress-indicator-font       = 2
+bar-progress-fill                 = ─
+bar-progress-fill-font            = 2
+bar-progress-empty                = ─
+bar-progress-empty-font           = 2
+bar-progress-empty-foreground     = $(colors.foreground-alt)
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[settings]
+screenchange-reload = true
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[global/wm]
+margin-top = 5
+marging-bottom = 5

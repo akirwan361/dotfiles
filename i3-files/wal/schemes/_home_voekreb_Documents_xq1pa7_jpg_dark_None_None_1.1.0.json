@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/voekreb/Documents/xq1pa7.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#050505",
+        "foreground": "#f1f1f1",
+        "cursor": "#f1f1f1"
+    },
+    "colors": {
+        "color0": "#050505",
+        "color1": "#6F6F6F",
+        "color2": "#8F8F8F",
+        "color3": "#B1B1B1",
+        "color4": "#C8C8C8",
+        "color5": "#D8D8D8",
+        "color6": "#E9E9E9",
+        "color7": "#f1f1f1",
+        "color8": "#a8a8a8",
+        "color9": "#6F6F6F",
+        "color10": "#8F8F8F",
+        "color11": "#B1B1B1",
+        "color12": "#C8C8C8",
+        "color13": "#D8D8D8",
+        "color14": "#E9E9E9",
+        "color15": "#f1f1f1"
+    }
+}
