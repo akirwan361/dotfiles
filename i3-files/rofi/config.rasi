@@ -11,7 +11,7 @@ configuration {
     fullscreen:			false;
     hide-scrollbar:		true;
     sidebar-mode:		false;
-
+}
 
 @import "dark.rasi"
 

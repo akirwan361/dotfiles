@@ -7,7 +7,8 @@ alert             =  #8d402a
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [bar/bottom]
-monitor             = eDP1
+monitor             = ${env:MONITOR:}
+; eDP1
 width               = 100%
 height              = 32
 fixed-center        = true
@@ -52,35 +53,45 @@ type                    = custom/text
 ;content                 = 
 content                 ="$_"
 content-foreground      = ${colors.foreground-alt}
-click-left              = i3-sensible-terminal &
+click-left              = alacritty &
+;i3-sensible-terminal &
 ;xfce4-terminal &
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/powermenu]
-type                      = custom/menu
+type 		   	   = custom/text
+content 		   = 
+content-padding  	   = 2
+content-background	   = ${colors.background}
+content-foreground	   = ${colors.foreground}
+click-left                 = "sh ~/.config/polybar/powermenu"
+; $HOME/.config/polybar/powermenu
+click-right 		   = echo right
+click-middle 		   = echo middle
+;type                      = custom/menu
 
-label-open                = 
-label-close               = x
-label-separator           = " | "
-expand-right              = true
-menu-0-0                  = Power
-menu-0-0-exec             = menu-open-1
-#menu-0-1                  = Reboot
-#menu-0-1-exec             = menu-open-2
-
-menu-1-0                  = Shutdown
-menu-1-0-exec             = shutdown &
-menu-1-1                  = Reboot
-menu-1-1-exec             = reboot &
-menu-1-2                  = Suspend
-menu-1-2-exec             = systemctl suspend &
+;label-open                = 
+;label-close               = x
+;label-separator           = " | "
+;expand-right              = true
+;menu-0-0                  = Power
+;menu-0-0-exec             = menu-open-1
+;#menu-0-1                  = Reboot
+;#menu-0-1-exec             = menu-open-2
+;
+;menu-1-0                  = Shutdown
+;menu-1-0-exec             = shutdown &
+;menu-1-1                  = Reboot
+;menu-1-1-exec             = reboot &
+;menu-1-2                  = Suspend
+;menu-1-2-exec             = systemctl suspend &
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;type                    = custom/text
 ;content                 = 
 ;content-padding         = 2
 ;content-background      = ${colors.background}
 ;content-foreground      = ${colors.foreground-alt}
-;click-left              =
+;click-left              = ~/.config/polybar/powermenu
 ;xfce4-session-logout
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
