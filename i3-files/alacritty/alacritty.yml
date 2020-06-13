@@ -1,7 +1,7 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 env:
-  TERM: alacritty
+  TERM: xterm-256color
 
 window:
   dimensions:
@@ -125,11 +125,40 @@ draw_bold_text_with_bright_colors: true
   #
   #indexed_colors: []
 
+# BEGIN ACE
+colors:
+  primary:
+    background: '0x141312'
+    foreground: '0xdecabe'
+  cursor:
+    text:       '0x141312'
+    cursor:     '0xdecabe'
+  normal:
+    black:      '0x141312'
+    red:        '0x8D402A'
+    green:      '0x935236'
+    yellow:     '0x9F6D53'
+    blue:       '0xB8845A'
+    magenta:    '0xB5896F'
+    cyan:       '0xC69676'
+    white:      '0xdecabe'
+  bright:
+    black:      '0x9b8d85'
+    red:        '0x8D402A'
+    green:      '0x935236'
+    yellow:     '0x9F6D53'
+    blue:       '0xB8845A'
+    magenta:    '0xB5896F'
+    cyan:       '0xC69676'
+    white:      '0xdecabe'
+
+# END ACE
+
 visual_bell:
   animation: EaseOutExpo
   duration: 0
 
-background_opacity: 1.0
+background_opacity: 0.75
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -157,7 +186,7 @@ shell:
 
 key_bindings:
   - { key: V,        mods: Control, action: Paste            }
-  - { key: C,        mods: Control, action: Copy             }
+  - { key: C,        mods: Control|Shift, action: Copy             }
   - { key: Insert,   mods: Shift,         action: PasteSelection   }
   - { key: Key0,     mods: Control,       action: ResetFontSize    }
   - { key: Equals,   mods: Control,       action: IncreaseFontSize }
