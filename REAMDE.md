@@ -1,7 +1,7 @@
 # dotfiles
 Don't expect order and functionality. Most things don't work but I'm learning anyway.
 
-[alt text something](https://raw.githubusercontent.com/amiller361/dotfiles/master/screenshot.png) <br/>
+![alt text something](https://raw.githubusercontent.com/amiller361/dotfiles/master/screenshot.png) <br/>
 ### xfce4-files
 I was using XFCE for a bit, but I switched to i3-gaps. Most of the config files are the same but obviously there are differences. Keeping it here just in case.
 
