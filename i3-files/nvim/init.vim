@@ -39,6 +39,10 @@ endif
 
 Plug 'ervandew/supertab'
 
+" add the pywal plugin 
+Plug 'dylanaraps/wal.vim'
+colorscheme wal 
+
 call plug#end()
 
 filetype plugin indent on
