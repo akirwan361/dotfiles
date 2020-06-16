@@ -78,8 +78,8 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+m bar mode toggle
 
 # set the gaps
-gaps inner 5
-gaps outer 3
+gaps inner 13
+gaps outer 6
 
 # change focus
 bindsym $mod+j focus left
@@ -228,7 +228,21 @@ hide_edge_borders both
 
 # let's try to set the betterlockscreen
 # set desktop background with custom effect
-exec --no-startup-id betterlockscreen -w dim
+exec --no-startup-id betterlockscreen 
+#-w dim
+
 
 # keybind it
 bindsym $mod+Shift+x exec betterlockscreen -l dim
+
+# assign some programs to certain workspaces?
+assign [class="Atom"] $ws2
+
+# make sure python plots have floating windows 
+for_window [class="^matplotlib"] floating enable
+# enable float for a few windows, like ncmpcpp and cava
+#for_window [class="^Cava$"] floating enable
+#for_window [class="^Ncmpcpp$"] floating enable
+
+# launch polybar on startup
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
