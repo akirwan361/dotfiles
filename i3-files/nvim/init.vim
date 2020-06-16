@@ -41,7 +41,7 @@ Plug 'ervandew/supertab'
 
 " add the pywal plugin 
 Plug 'dylanaraps/wal.vim'
-colorscheme wal 
+" colorscheme wal 
 
 call plug#end()
 
@@ -64,3 +64,4 @@ let g:vimtex_view_method = 'zathura'
 
 let g:python3_host_prog = '/usr/bin/python'
 
+colorscheme wal
