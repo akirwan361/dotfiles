@@ -31,7 +31,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Set compton as the compositor?
+# Set picom/compton as the compositor?
 exec --no-startup-id compton &
 
 # Use pactl to adjust volume in PulseAudio.
@@ -45,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym Ctrl+shift+s exec systemctl suspend
 
 # screenshot
-bindsym Print exec scrot $HOME/Pictures/'date+%Y-%m-%d_%H:%M:%S'.png
+bindsym Print exec scrot $HOME/Pictures/'Screenshot+%Y-%m-%d_%H:%M:%S'.png
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -228,21 +228,24 @@ hide_edge_borders both
 
 # let's try to set the betterlockscreen
 # set desktop background with custom effect
-exec --no-startup-id betterlockscreen 
+exec --no-startup-id betterlockscreen -u $(cat ~/.cache/wal/wal)
+#source ~/.fehbh 
 #-w dim
 
 
 # keybind it
-bindsym $mod+Shift+x exec betterlockscreen -l dim
+bindsym $mod+Shift+x exec betterlockscreen -l blur 
 
 # assign some programs to certain workspaces?
 assign [class="Atom"] $ws2
 
 # make sure python plots have floating windows 
 for_window [class="^matplotlib"] floating enable
+for_window [class="QFitsView_4.0"] floating enable
+for_window [class="^vlc"] floating enable
 # enable float for a few windows, like ncmpcpp and cava
 #for_window [class="^Cava$"] floating enable
 #for_window [class="^Ncmpcpp$"] floating enable
 
 # launch polybar on startup
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id $HOME/.config/polybar/launch.sh
